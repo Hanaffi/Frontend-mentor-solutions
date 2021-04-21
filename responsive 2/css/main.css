@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.7;
+}
+h2,
+p {
+    color: #658cc6;
+    font-weight: 500;
+    opacity: 0.7;
+}
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.7;
+}
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(3rem);
+    display: flex;
+}
+
+.circle1,
+.circle2 {
+    background: white;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.2)
+    );
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+.circle2 {
+    bottom: 10%;
+    left: 10%;
+}
+
+.dashboard {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+}
+
+.link {
+    display: flex;
+    margin: 2rem 0rem;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    align-items: center;
+}
+.link h2 {
+    padding: 0rem 2rem;
+}
+.games {
+    flex-grow: 2;
+}
+.pro {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    padding: 1rem;
+    position: relative;
+    margin-bottom: 10px;
+    margin-inline: 10px;
+}
+
+.pro img {
+    position: absolute;
+    top: -20%;
+}
+.pro h2 {
+    width: 40%;
+    color: white;
+    font-weight: 600;
+}
+
+/* Games */
+.status {
+    margin-bottom: 3rem;
+}
+
+.status input {
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+    );
+    border: none;
+    width: 70%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    outline: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5rem;
+}
+.cards {
+    width: 100%;
+}
+.card {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: linear-gradient(
+        to right top,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.8)
+    );
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 2rem 0rem;
+    box-shadow: 6px 6px 20px rgba(100, 100, 100, 0.3);
+}
+
+.progress {
+    width: 100%;
+    height: 1rem;
+    background-color: #426696;
+    border-radius: 1rem;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    position: relative;
+}
+.progress::after {
+    content: "";
+    width: 60%;
+    height: 100%;
+    border-radius: 1rem;
+    position: absolute;
+    background-color: rgb(121, 171, 184);
+}
+
+.percentage {
+    font-weight: bolder;
+}
+.card-info {
+    width: 50%;
+    text-align: left;
+}
+@media (max-width: 1300px) {
+    .glass {
+        background: white;
+        min-height: 80vh;
+        width: 80%;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+        );
+        border-radius: 2rem;
+        z-index: 3;
+        backdrop-filter: blur(3rem);
+        display: flex;
+    }
+}
+@media (max-width: 1000px) {
+    .glass {
+        background: white;
+        min-height: 80vh;
+        width: 100%;
+        background: linear-gradient(
+            to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+        );
+        border-radius: 2rem;
+        z-index: 3;
+        backdrop-filter: blur(3rem);
+        display: flex;
+    }
+}
+
+@media (max-width: 800px) {
+    .glass {
+        flex-direction: column;
+    }
+}
