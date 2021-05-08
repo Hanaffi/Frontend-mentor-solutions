@@ -97,6 +97,7 @@ body{
  h1{
      font-size: 2.5em;
      margin-top: 0;
+     width:5ch;
  }
 
  @media (max-width:1000px) {
